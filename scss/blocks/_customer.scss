@@ -1,0 +1,143 @@
+.customer {
+    position: relative;
+    padding-bottom: 90px;
+    background-color:var(--main-dark-item);
+}
+.customer::after {
+    position: absolute;
+    top: calc(50% + 230px);
+    left: calc(50% - 50px);
+    width: 95px;
+    height: 20px;
+    background-image: url("../../images/SliderDots.svg");
+    content: "";
+}
+.dark .customer::after {
+    background-image: url("../../images/SliderDotspink.svg");
+
+}
+.customer__wrapper {
+    position: relative;
+    column-gap: 31px;
+}
+.customer__wrapper::before {
+    position: absolute;
+    display: none;
+    top: 120px;
+    left: -25px;
+    width: 55px;
+    height: 55px;
+    background-image: url("../../images/Buttonfull.svg");
+    content: "";
+}
+.dark .customer__wrapper::before {
+    background-image: url("../../images/Buttonpink.svg");
+}
+.customer__wrapper::after {
+    display: none;
+    position: absolute;
+    top: calc(50% - 25px);
+    right: -25px;
+    width: 55px;
+    height: 55px;
+    background-image: url("../../images/Button.svg");
+    content: "";
+}
+.dark .customer__wrapper::after {
+    background-image: url("../../images/Buttonrightpink.svg");
+}
+.customer__heading {
+    max-width: 286px;
+    margin-bottom: 30px;
+}
+.customer__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    color: var(--main-section-title);
+}
+.customer__subtext {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--main-section-text);
+}
+.customer__info {
+    max-width: 286px;
+    padding: 80px 30px 30px;
+    background-color: var(--main-carusel-hover);
+    border-radius: 8px;
+}
+
+.customer__text {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: var(--main-section-title);
+}
+.customer__text::before {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 112px;
+    height: 19px;
+    background-image: url("../../images/Stars.svg");
+    content: "";
+}
+.customer__img {
+    margin-right: 15px;
+}
+.customer__user-name {
+    font-weight: var(--main-subtext-weight);
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--main-section-title);
+    
+    
+}
+.customer__user-work {
+    font-weight: 400;
+    font-size: 15.3638px;
+    line-height: 150%;
+    color: var(--main-section-text);
+}
+@media only screen and (min-width:515px) {
+    .customer__info {
+        max-width: 402px;
+    }
+    .customer__heading {
+        max-width: 505px;
+    } 
+    .customer__title {
+        font-size: 48px;
+        line-height: 120%;
+    }
+} 
+@media only screen and (min-width:535px) {
+    .customer::after {
+        top: calc(50% + 200px);
+    }
+}
+@media only screen and (min-width:990px) {
+    .customer {
+        padding: 100px 0 150px;
+    }
+    .customer::after {
+        top: calc(50% + 270px);
+    }
+    .customer__heading {
+        margin-bottom: 80px;
+    }
+    .customer__wrapper::before { 
+        display: inline-block;
+    }
+
+    .customer__wrapper::after { 
+        display: inline-block;
+    }
+
+}

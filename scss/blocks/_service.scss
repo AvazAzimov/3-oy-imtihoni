@@ -1,0 +1,108 @@
+.service {
+    padding-top: 83px;
+    padding-bottom: 83px;
+    background: var(--main-form-color);
+}
+.service__wrapper {
+    
+}
+.service__info {
+    
+}
+.service__title {
+    margin-bottom: 10px;
+    font-weight: var(--main-subtitle-weight);
+    font-size: 38px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: var(--main-dark-title);
+}
+.service__text {
+    margin-bottom: 20px;
+    font-weight: var(--main-smoll-weight);
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--main-dark-title);
+}
+.service__form {
+    margin-bottom: 10px;
+}
+.service__input {
+    max-width:242px;
+    margin-right: 10px;
+    padding: 12px 12px;
+    border-radius: 32px;
+    border: 1.5px solid transparent;
+    outline:none;
+}
+.service__input:focus {
+    border: 1.5px solid var(--main-link-color);
+}
+::placeholder {
+    font-style: normal;
+    font-weight: var(--main-smoll-weight);
+    font-size: 15px;
+    line-height: 150%;
+    color: #505050;
+}
+.service__btn {
+    max-width: 91px;
+    width: 100%;
+    padding: 12px 10px;
+    background-color:var(--main-link-color);
+    border-radius: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: var( --main-card-bg);
+    
+}
+.service__subtext {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--main-dark-title);
+}
+.service__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--main-dark-title);   
+}
+@media only screen and (min-width:375px)  {
+    .service__input {
+        padding: 12px 48px;
+    }
+    .service__btn {
+        font-size: 16px;
+    }
+    ::placeholder {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width:990px) {
+    .service__title {
+        margin-bottom: 24px;
+        font-size: 48px;
+        line-height: 120%;
+    }
+    .service__text {
+        margin-bottom: 44px;
+        font-size: 18px;
+        line-height: 150%;
+    }
+    
+    .service__input {
+        max-width: 365px;
+        width: 100%;
+        padding: 12px 28px;
+    }
+    .service__btn {
+        max-width: 136px;
+        font-size: 16px;
+        padding: 16px 38px;
+    }
+    .service__subtext {
+        
+    }
+}

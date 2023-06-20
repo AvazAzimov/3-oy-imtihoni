@@ -1,0 +1,108 @@
+.needs {
+}
+.needs__info {
+    margin-bottom: 30px;
+}
+.needs__title {
+    margin-bottom: 10px;
+    font-weight: var(--main-subtitle-weight);
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--main-section-title);
+}
+.needs__text {
+    font-weight: var(--main-smoll-weight);
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--main-section-text);
+}
+.card {
+    background-color: var(--main-card-bg);
+}
+
+.needs__card-box {
+    column-gap: 32px;
+}
+.card-title {
+    font-weight: var(--main-subtitle-weight);
+    font-size: 23px;
+    line-height: 120%;
+    color: var(--main-section-title);
+}
+.card-text {
+    margin-bottom: 40px;
+    font-weight: var(--main-smoll-weight);
+    font-size: 16px;
+    line-height: 155%;
+    color: var(--main-section-text);
+}
+.card-link {
+    
+}
+.needs__card {
+    max-width: 288px;
+    padding: 16px;
+    border-radius: 8px;
+}
+.needs__card:hover {
+    background-color: var(--main-card-color);
+    transition: 0.3s;
+}
+.needs__card:hover .card__link  {
+    color: var(--main-link-color);
+    transition: 0.3s;
+}
+.needs__card-two {
+    max-width: 288px;
+    padding: 21px 16px;
+    
+}
+.needs__card-two:hover {
+    background-color: var(--main-card-color);
+    transition: 0.3s;
+}
+.needs__card-two:hover .card__link  {
+    color: var(--main-link-color);
+    transition: 0.3s;
+}
+.card__link {
+    font-weight: var(--main-subtext-weight);
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: var(--main-section-text);
+}
+@media only screen and (min-width:475px)  {
+    .needs__card {
+        max-width: 405px;
+    }
+    .needs__card-two {
+        max-width: 405px;
+    }
+    .card-title  {
+        font-size: 25px;
+        line-height: 120%;
+    }
+}
+@media only screen and (min-width:767px) {
+    .needs__info {
+        margin-bottom: 80px;
+    }
+    
+    .needs__card {
+        padding: 24px;
+    }
+    .needs__card-two {
+        padding: 28px 20px;
+    }
+}
+@media only screen and (min-width:880px) {
+    .card-title {
+        font-size: 32px;
+    }
+}
+@media only screen and (min-width:990px) {
+    .needs {
+        padding-bottom:100px;
+    }
+} 
